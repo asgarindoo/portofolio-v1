@@ -11,9 +11,9 @@ const FeaturedArtworks = () => {
         <div
           className={`col-span-8 row-span-7 sm:col-span-8 md:col-span-2 md:row-span-8 lg:col-span-5 lg:row-span-3 ${gridItemClasses}`}>
           <div className="m-16">
-            <h1 className="text-4xl mb-4">Hi, Im Asgarindoo -</h1>
+            <h1 className="text-4xl mb-4">Hi, I{"'"}am Asgarindoo -</h1>
             <p className="text-xl opacity-55">
-              Frontend Developer, currently studying at the{" "}
+              Frontend Developer, currently studying at the
               <a href="https://unesa.ac.id" className="underline">
                 State University of Surabaya
               </a>
