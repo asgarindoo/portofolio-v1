@@ -24,7 +24,7 @@ const About = () => {
             Hi There 👋
           </h1>
           <h2 className="text-4xl mb-14 font-semibold sm:text-5xl lg:mb-10 lg:mt-10 font-manrope">
-            <span className="text-[#c4c4c4] opacity-55">I'm </span>
+            <span className="text-[#c4c4c4] opacity-55">I{"'"}m </span>
             <span className="text-[#c4c4c4]">Asgarindo Dwiki Ibrahim Adji</span>
             <span className="text-[#c4c4c4] opacity-55">
               {" "}
@@ -33,8 +33,8 @@ const About = () => {
           </h2>
 
           <p className="mt-4 text-[#c4c4c4] text-lg opacity-55 font-manrope mb-14">
-            I'm a dedicated IT student with a keen interest and proficiency in
-            frontend development and web design. Experienced in building
+            I{"'"}m a dedicated IT student with a keen interest and proficiency
+            in frontend development and web design. Experienced in building
             responsive and engaging user interfaces. Skilled in popular
             frameworks and capable of transforming UI/UX designs into functional
             web applications. Proficient in web design, creating aesthetically
