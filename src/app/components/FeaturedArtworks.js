@@ -1,19 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
 import CopyToClipboard from "./copyText";
+import { FaGithubSquare, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 
 const FeaturedArtworks = () => {
-  const gridItemClasses = `bg-[#171717] rounded-2xl flex justify-center items-center`;
+  const gridItemClasses = `bg-[#171717] rounded-2xl flex justify-center items-center border border-[#282828]`;
 
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center p-6">
       <div className="grid h-full w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-11 gap-2 lg:gap-4">
         <div
           className={`col-span-8 row-span-7 sm:col-span-8 md:col-span-2 md:row-span-8 lg:col-span-5 lg:row-span-3 ${gridItemClasses}`}>
-          <div className="m-16">
-            <h1 className="text-4xl mb-4">Hi, I{"'"}am Asgarindoo -</h1>
+          <div className="m-10">
+            <h1 className="text-4xl mb-4">Hi, I{"'"}m Asgarindoo -</h1>
             <p className="text-xl opacity-55">
-              Frontend Developer, currently studying at the
+              Frontend Developer, currently studying at the{" "}
               <a href="https://unesa.ac.id" className="underline">
                 State University of Surabaya
               </a>
@@ -69,25 +70,31 @@ const FeaturedArtworks = () => {
         <div
           className={`col-span-2 row-span-3 sm:col-span-3 sm:row-span-2 md:col-span-3 md:row-span-2 lg:col-span-1 lg:row-span-1 ${gridItemClasses} cursor-pointer hover:bg-[#282828] transition-colors duration-300 ease-in-out p-4 rounded`}>
           <div>
-            <h1>Darkmode</h1>
+            <p className="text-3xl font-bold">CV</p>
           </div>
         </div>
         <div
           className={`col-span-2 row-span-3 sm:col-span-3 sm:row-span-2 md:col-span-1 md:row-span-2 lg:col-span-1 lg:row-span-1 ${gridItemClasses} cursor-pointer hover:bg-[#282828] transition-colors duration-300 ease-in-out p-4 rounded`}>
           <div>
-            <Image src="/git.png" width={50} height={50} alt="GitHub" />
+            <a href="https://github.com/asgarindoo">
+              <FaGithubSquare className="text-4xl" />
+            </a>
           </div>
         </div>
         <div
           className={`col-span-2 row-span-3 sm:col-span-3 sm:row-span-2 md:col-span-1 md:row-span-2 lg:col-span-1 lg:row-span-1 ${gridItemClasses} cursor-pointer hover:bg-[#282828] transition-colors duration-300 ease-in-out p-4 rounded`}>
           <div>
-            <Image src="/git.png" width={50} height={50} alt="Linkedin" />
+            <a href="https://www.linkedin.com/in/asgarindoo/">
+              <FaLinkedin className="text-4xl" />
+            </a>
           </div>
         </div>
         <div
           className={`col-span-2 row-span-3 sm:col-span-3 sm:row-span-2 md:col-span-1 md:row-span-2 lg:col-span-1 lg:row-span-1 ${gridItemClasses} cursor-pointer hover:bg-[#282828] transition-colors duration-300 ease-in-out p-4 rounded`}>
           <div>
-            <Image src="/git.png" width={50} height={50} alt="Instagram" />
+            <a href="https://www.instagram.com/dwikiy_">
+              <FaInstagramSquare className="text-4xl" />
+            </a>
           </div>
         </div>
         <div
@@ -121,7 +128,7 @@ const FeaturedArtworks = () => {
           className={`col-span-3 row-span-3 sm:col-span-8 sm:row-span-4 md:col-span-2 lg:col-span-2 lg:row-span-2 ${gridItemClasses} hover:bg-[#282828] transition-colors duration-300 ease-in-out  `}>
           <Link href="/about">
             <div className="p-5 pl-10">
-              <h1 className="text-lg mb-4 ">About</h1>
+              <h1 className="text-lg mb-3 ">About</h1>
               <p className="text-md opacity-55">
                 Frontend enthusiast and love to design
               </p>
@@ -140,8 +147,8 @@ const FeaturedArtworks = () => {
         </div>
         <div
           className={`col-span-3 row-span-3 sm:col-span-7 sm:row-span-6 md:col-span-2 lg:col-span-2 lg:row-span-2 ${gridItemClasses}`}>
-          <div className="p-5">
-            <h1 className="text-lg mb-4">Contact</h1>
+          <div className="p-5 mx-10">
+            <h1 className="text-lg mb-4 ">Contact</h1>
             <CopyToClipboard text={"asgarindo9@gmail.com"} />
           </div>
         </div>
@@ -155,7 +162,7 @@ const FeaturedArtworks = () => {
               <div className="animate-loop-scroll group-hover:paused flex space-x-16">
                 <Image
                   loading="lazy"
-                  src="/javaScript-logo.png"
+                  src="/JavaScript-logo.png"
                   width={50}
                   height={50}
                   className="max-w-none h-10 w-10 grayscale hover:grayscale-0"

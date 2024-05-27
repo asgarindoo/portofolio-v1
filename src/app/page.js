@@ -1,11 +1,7 @@
 import FeaturedArtworks from "./components/FeaturedArtworks";
 
 const HomePage = () => {
-  return (
-    <div>
-      <FeaturedArtworks />
-    </div>
-  );
+  return <FeaturedArtworks />;
 };
 
 export default HomePage;
