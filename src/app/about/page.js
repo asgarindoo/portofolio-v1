@@ -1,16 +1,12 @@
 import Head from "next/head";
-import CopyToClipboard from "../components/copyText";
-import Profile from "../components/simpleProfile";
+import Sidebar from "../components/sidebar";
 
 const About = () => {
   return (
     <div className="bg-[#0d0d0d] min-h-screen">
       <Head>
-        <title>About Us</title>
-        <meta
-          name="description"
-          content="Learn more about our company and team."
-        />
+        <title>About ME</title>
+        <meta name="description" content="Learn more about me" />
         <link
           href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
           rel="stylesheet"
@@ -23,7 +19,7 @@ const About = () => {
             {" "}
             Hi There 👋
           </h1>
-          <h2 className="text-4xl mb-14 font-semibold sm:text-5xl lg:mb-10 lg:mt-10 font-manrope">
+          <h2 className="text-4xl mb-14 font-semibold sm:text-5xl lg:mb-10 lg:mt-10 font-manrope animate-fade-down animate-duration-500">
             <span className="text-[#c4c4c4] opacity-55">I{"'"}m </span>
             <span className="text-[#c4c4c4]">Asgarindo Dwiki Ibrahim Adji</span>
             <span className="text-[#c4c4c4] opacity-55">
@@ -32,7 +28,7 @@ const About = () => {
             </span>
           </h2>
 
-          <p className="mt-4 text-[#c4c4c4] text-lg opacity-55 font-manrope mb-14">
+          <p className="mt-4 text-[#c4c4c4] text-lg opacity-55 font-manrope mb-14 animate-fade-down animate-duration-1000">
             I{"'"}m a dedicated IT student with a keen interest and proficiency
             in frontend development and web design. Experienced in building
             responsive and engaging user interfaces. Skilled in popular
@@ -44,7 +40,7 @@ const About = () => {
             technologies.
           </p>
 
-          <div className="bg-[#171717] p-8 rounded-lg shadow-md">
+          <div className="bg-[#171717] p-8 rounded-lg shadow-md animate-fade-down ">
             <h1 className="text-3xl font-semibold text-[#c4c4c4] mb-6">
               Experience
             </h1>
@@ -86,25 +82,10 @@ const About = () => {
             {/* Tambahkan entri pengalaman lainnya jika diperlukan */}
           </div>
         </div>
-        <div className="w-full md:w-1/3">
-          <div className="sticky top-12">
-            <Profile />
-            <div className="bg-[#171717] mt-4">
-              <iframe
-                src="https://open.spotify.com/embed/playlist/4N1kznwvefGMWRheqWL2q7?utm_source=generator&theme=0"
-                width="100%"
-                height="152"
-                frameBorder="0"
-                allowFullScreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"></iframe>
-            </div>
-            <div className="bg-[#171717] mt-4 flex">
-              <CopyToClipboard text="asgarindo9@gmail.com" />
-              <p className="text-md font-medium text-[#c4c4c4] font-manrope mt-2 mx-auto">
-                Have Project in Mind?
-              </p>
-            </div>
+
+        <div className="md:w-1/3 ">
+          <div className="sticky top-10">
+            <Sidebar />
           </div>
         </div>
       </main>

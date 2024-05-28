@@ -1,4 +1,5 @@
 import React from "react";
+import CopyToClipboard from "../components/copyText";
 
 import {
   FaLocationDot,
@@ -59,14 +60,14 @@ const Profile = () => {
               href="https://codepen.io/JavaScriptJunkie"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#c4c4c4 bg-[#282828] hover:bg-[#303030] p-2 rounded mr-4">
+              className="text-[#c4c4c4 bg-[#282828] hover:bg-[#303030] p-2 rounded mr-4 hover:animate-bounce">
               <p className="text-[#c4c4c4] text-xl font-extrabold">CV</p>
             </a>
             <a
               href="https://www.instagram.com/iamuhammederdem"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#c4c4c4] bg-[#282828] hover:bg-[#303030] p-2 rounded mr-4">
+              className="text-[#c4c4c4] bg-[#282828] hover:bg-[#303030] p-2 rounded mr-4 hover:animate-bounce">
               <FaInstagram className="w-7 h-7" />
             </a>
 
@@ -74,14 +75,14 @@ const Profile = () => {
               href="https://github.com/muhammederdem"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#c4c4c4] bg-[#282828] hover:bg-[#303030] p-2 rounded mr-4">
+              className="text-[#c4c4c4] bg-[#282828] hover:bg-[#303030] p-2 rounded mr-4 hover:animate-bounce">
               <FaGithub className="w-7 h-7" />
             </a>
             <a
               href="https://codepen.io/JavaScriptJunkie"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#c4c4c4] bg-[#282828] hover:bg-[#303030] p-2 rounded ">
+              className="text-[#c4c4c4] bg-[#282828] hover:bg-[#303030] p-2 rounded hover:animate-bounce ">
               <FaLinkedinIn className="w-7 h-7" />
             </a>
           </div>
