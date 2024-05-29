@@ -1,5 +1,4 @@
 import React from "react";
-import CopyToClipboard from "../components/copyText";
 
 import {
   FaLocationDot,
@@ -57,14 +56,14 @@ const Profile = () => {
 
           <div className="flex items-center justify-center m-10">
             <a
-              href="https://codepen.io/JavaScriptJunkie"
+              href="/resume"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#c4c4c4 bg-[#282828] hover:bg-[#303030] p-2 rounded mr-4 hover:animate-bounce">
               <p className="text-[#c4c4c4] text-xl font-extrabold">CV</p>
             </a>
             <a
-              href="https://www.instagram.com/iamuhammederdem"
+              href="https://www.instagram.com/dwikiy_"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#c4c4c4] bg-[#282828] hover:bg-[#303030] p-2 rounded mr-4 hover:animate-bounce">
@@ -72,14 +71,14 @@ const Profile = () => {
             </a>
 
             <a
-              href="https://github.com/muhammederdem"
+              href="https://github.com/asgarindoo"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#c4c4c4] bg-[#282828] hover:bg-[#303030] p-2 rounded mr-4 hover:animate-bounce">
               <FaGithub className="w-7 h-7" />
             </a>
             <a
-              href="https://codepen.io/JavaScriptJunkie"
+              href="https://linkedin.com/in/asgarindoo"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#c4c4c4] bg-[#282828] hover:bg-[#303030] p-2 rounded hover:animate-bounce ">

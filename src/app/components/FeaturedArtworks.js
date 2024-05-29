@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import CopyToClipboard from "./copyText";
 import { FaGithubSquare, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
+import infiniteScroll from "./infiniteScroll";
+import InfiniteScroll from "./infiniteScroll";
 
 const FeaturedArtworks = () => {
   const gridItemClasses = `bg-[#171717] rounded-2xl flex justify-center items-center border border-[#282828]`;
@@ -70,7 +72,9 @@ const FeaturedArtworks = () => {
         <div
           className={`col-span-2 row-span-3 sm:col-span-3 sm:row-span-2 md:col-span-3 md:row-span-2 lg:col-span-1 lg:row-span-1 ${gridItemClasses} cursor-pointer hover:bg-[#282828] transition-colors duration-300 ease-in-out p-4 rounded`}>
           <div>
-            <p className="text-3xl font-bold">CV</p>
+            <Link href="/resume" className="text-3xl font-bold">
+              CV
+            </Link>
           </div>
         </div>
         <div
@@ -155,129 +159,8 @@ const FeaturedArtworks = () => {
 
         <div
           className={`col-span-8 row-span-3 sm:col-span-8 sm:row-span-6 md:col-span-3 lg:col-span-6 lg:row-span-2 ${gridItemClasses}`}>
-          <div className="overflow-hidden mx-5 my-5 px-5 ">
-            <h1 className="text-lg mb-10">Stack I Use</h1>
-
-            <div className="group flex space-x-16 overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] ">
-              <div className="animate-loop-scroll group-hover:paused flex space-x-16">
-                <Image
-                  loading="lazy"
-                  src="/JavaScript-logo.png"
-                  width={50}
-                  height={50}
-                  className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
-                  alt="Image 1"
-                />
-                <Image
-                  loading="lazy"
-                  src="/Vuejs.png"
-                  width={50}
-                  height={50}
-                  className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
-                  alt="Image 2"
-                />
-                <Image
-                  loading="lazy"
-                  src="/TailwindCSS.png"
-                  width={50}
-                  height={50}
-                  className="max-w-none h-10 w-14 grayscale hover:grayscale-0"
-                  alt="Image 3"
-                />
-                <Image
-                  loading="lazy"
-                  src="/Express.png"
-                  width={50}
-                  height={50}
-                  className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
-                  alt="Image 4"
-                />
-                <Image
-                  loading="lazy"
-                  src="/Mongodb.png"
-                  width={50}
-                  height={50}
-                  className="max-w-none h-10 w-10 grayscale hover:grayscale-0 "
-                  alt="Image 5"
-                />
-                <Image
-                  loading="lazy"
-                  src="/git.png"
-                  width={50}
-                  height={50}
-                  className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
-                  alt="Image 6"
-                />
-                <Image
-                  loading="lazy"
-                  src="/Figma.png"
-                  width={50}
-                  height={50}
-                  className="max-w-none h-12 w-12 grayscale hover:grayscale-0"
-                  alt="Image 7"
-                />
-              </div>
-              <div
-                className="animate-loop-scroll group-hover:paused flex space-x-16"
-                aria-hidden="true">
-                <Image
-                  loading="lazy"
-                  src="/javaScript-logo.png"
-                  width={300}
-                  height={300}
-                  className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
-                  alt="Image 1"
-                />
-                <Image
-                  loading="lazy"
-                  src="/Vuejs.png"
-                  width={50}
-                  height={50}
-                  className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
-                  alt="Image 2"
-                />
-                <Image
-                  loading="lazy"
-                  src="/TailwindCSS.png"
-                  width={50}
-                  height={50}
-                  className="max-w-none h-10 w-14 grayscale hover:grayscale-0"
-                  alt="Image 3"
-                />
-                <Image
-                  loading="lazy"
-                  src="/Express.png"
-                  width={50}
-                  height={50}
-                  className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
-                  alt="Image 4"
-                />
-                <Image
-                  loading="lazy"
-                  src="/Mongodb.png"
-                  width={50}
-                  height={50}
-                  className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
-                  alt="Image 5"
-                />
-                <Image
-                  loading="lazy"
-                  src="/git.png"
-                  width={50}
-                  height={50}
-                  className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
-                  alt="Image 6"
-                />
-                <Image
-                  loading="lazy"
-                  src="/Figma.png"
-                  width={50}
-                  height={50}
-                  className="max-w-none h-12 w-12 grayscale hover:grayscale-0"
-                  alt="Image 7"
-                />
-              </div>
-            </div>
+          <div className="overflow-hidden pb-10">
+            <InfiniteScroll />
           </div>
         </div>
       </div>
