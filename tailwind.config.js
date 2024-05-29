@@ -19,5 +19,16 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animated")],
+  plugins: [
+    require("tailwindcss-animated"),
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".mask-gradient": {
+          maskImage:
+            "linear-gradient(to right, transparent 0.5%, #313131 100%)",
+        },
+      };
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+  ],
 };

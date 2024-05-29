@@ -61,12 +61,12 @@ const Project = () => {
               </span>
             ))}
           </div>
-          <div className="absolute inset-y-0 right-0 w-1/3 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="absolute inset-y-0 right-0 w-1/3 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 mask-gradient">
             <Image
               src={project.image}
               alt={project.title}
               layout="fill"
-              className="max-h-full max-w-full object-cover"
+              className="max-h-full max-w-full object-cover "
             />
           </div>
           <div className="flex space-x-4 absolute bottom-4 left-4 text-sm">
