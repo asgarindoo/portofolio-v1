@@ -28,8 +28,8 @@ const FeaturedArtworks = () => {
           <Link href="/project" className="h-full w-full">
             <div className="h-full w-full  rounded-2xl relative overflow-hidden">
               <Image
-                className="h-full w-full object-cover transition-transform duration-500"
-                src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1955&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                className="h-full w-full object-cover transition-transform duration-500 "
+                src="/myproject.jpg"
                 width={300}
                 height={300}
                 alt="Project"
@@ -40,7 +40,7 @@ const FeaturedArtworks = () => {
                     Project
                   </h3>
                   <div className="gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
-                    City of love
+                    See More
                   </div>
                 </div>
               </div>
@@ -52,8 +52,8 @@ const FeaturedArtworks = () => {
           <Link href="/blog" className="h-full w-full">
             <div className="h-full w-full  rounded-2xl relative overflow-hidden">
               <Image
-                className="h-full w-full object-cover transition-transform duration-500 transform"
-                src="https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                className="h-full w-full object-cover transition-transform duration-500"
+                src="/myblog.jpg"
                 width={300}
                 height={300}
                 alt="Blog"
@@ -62,7 +62,7 @@ const FeaturedArtworks = () => {
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-center opacity-0 hover:opacity-100 transition-opacity duration-500">
                   <h3 className="text-3xl font-bold text-white mt-3">Blog</h3>
                   <div className="gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
-                    City of love
+                    See More
                   </div>
                 </div>
               </div>
@@ -107,7 +107,7 @@ const FeaturedArtworks = () => {
             <div className="h-full w-full rounded-2xl relative overflow-hidden">
               <Image
                 className="h-full w-full object-cover"
-                src="https://plus.unsplash.com/premium_photo-1716312756632-bf6d18b93a71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="/myhobby.jpg"
                 width={300}
                 height={300}
                 alt="Hobby"
@@ -119,7 +119,7 @@ const FeaturedArtworks = () => {
                       Hobby
                     </h3>
                     <div className="gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
-                      City of love
+                      See More
                     </div>
                   </div>
                 </div>
@@ -147,6 +147,7 @@ const FeaturedArtworks = () => {
             width={500}
             height={500}
             alt="Author Profile"
+            draggable="false"
           />
         </div>
         <div
@@ -160,7 +161,7 @@ const FeaturedArtworks = () => {
         <div
           className={`col-span-8 row-span-3 sm:col-span-8 sm:row-span-6 md:col-span-3 lg:col-span-6 lg:row-span-2 ${gridItemClasses}`}>
           <div className="overflow-hidden pb-10">
-            <InfiniteScroll />
+            <InfiniteScroll className="px-10" />
           </div>
         </div>
       </div>
