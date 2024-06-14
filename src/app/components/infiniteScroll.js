@@ -4,7 +4,7 @@ const InfiniteScroll = () => {
   return (
     <div>
       <div className="overflow-hidden mx-5 px-5 ">
-        <h1 className="text-lg mb-10">Stack I Use</h1>
+        <h1 className="text-lg mb-10 sm:mt-5">Stack I Use</h1>
       </div>
       <div className="group flex space-x-16 overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] ">
         <div className="animate-loop-scroll group-hover:paused flex space-x-16">
