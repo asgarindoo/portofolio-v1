@@ -71,8 +71,8 @@ const InfiniteScroll = () => {
           <Image
             loading="lazy"
             src="/javaScript-logo.png"
-            width={300}
-            height={300}
+            width={50}
+            height={50}
             className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
             alt="Image 1"
           />
