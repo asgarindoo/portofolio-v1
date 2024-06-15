@@ -84,7 +84,7 @@ const About = () => {
         </div>
 
         <div className="md:w-1/3 ">
-          <div className="sticky top-10">
+          <div className="mt-10 lg:mt-0 mx-auto lg:sticky lg:top-10">
             <Sidebar />
           </div>
         </div>

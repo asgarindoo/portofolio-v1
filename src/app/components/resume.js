@@ -3,11 +3,9 @@ const embeddedResume = () => {
     <div className="bg-[#171717] ">
       <iframe
         src="/myresume.pdf"
-        className="w-full"
-        width="100%"
-        height="1100 overflow-hidden"
-        allowFullScreen="true"
-        frameborder="0"></iframe>
+        className="w-full h-screen md:h-[1100px] overflow-hidden"
+        allowFullScreen
+        frameBorder="0"></iframe>
     </div>
   );
 };

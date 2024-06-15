@@ -46,10 +46,10 @@ const Project = () => {
         <div
           key={index}
           className="bg-[#171717] p-8 rounded-lg shadow-md relative group overflow-hidden cursor-auto h-64">
-          <h2 className="text-2xl text-[#c4c4c4] font-manrope mb-4">
+          <h2 className="md:text-2xl text-[#c4c4c4] font-manrope mb-4">
             {project.title}
           </h2>
-          <p className="text-[#a9a9a9] mb-2 pr-3 group-hover:max-w-[68%] transition-all ease-in-out duration-300">
+          <p className="text-sm md:text-md text-[#a9a9a9] mb-2 pr-3 md:group-hover:max-w-[68%] transition-all ease-in-out duration-300">
             {project.description}
           </p>
           <div className="flex flex-wrap mb-4">
@@ -61,7 +61,7 @@ const Project = () => {
               </span>
             ))}
           </div>
-          <div className="absolute inset-y-0 right-0 w-1/3 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 mask-gradient">
+          <div className="none md:absolute inset-y-0 right-0 w-1/3 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 mask-gradient">
             <Image
               src={project.image}
               alt={project.title}

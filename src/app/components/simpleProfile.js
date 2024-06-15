@@ -15,7 +15,7 @@ const Profile = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center mb-4">
               <img
-                className="w-20 h- rounded-full border-2 border-[#c4c4c4] border-opacity-50 mr-4"
+                className="w-20 h-20 rounded-full border-2 border-[#c4c4c4] border-opacity-50 mr-4"
                 src="/profile.jpg"
                 alt="Profile"
               />
@@ -41,15 +41,15 @@ const Profile = () => {
 
           <div className="flex justify-between mt-5">
             <div className="flex-1 text-center px-4">
-              <p className="text-xl font-bold">10</p>
+              <p className="text-xl font-bold">¿</p>
               <p className="text-[#c4c4c4]">Tools</p>
             </div>
             <div className="flex-1 text-center px-4">
-              <p className="text-xl font-bold">4</p>
+              <p className="text-xl font-bold">¿</p>
               <p className="text-[#c4c4c4]">Leanguage</p>
             </div>
             <div className="flex-1 text-center px-4">
-              <p className="text-xl font-bold">6</p>
+              <p className="text-xl font-bold">¿</p>
               <p className="text-[#c4c4c4]">Project</p>
             </div>
           </div>
