@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Sidebar from "../components/sidebar";
+import BackToHomeIcon from "../components/BackToHome";
 
 const About = () => {
   return (
@@ -14,10 +15,11 @@ const About = () => {
       </Head>
 
       <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 flex flex-wrap ">
-        <div className="w-full md:w-2/3 pr-10 ">
-          <h1 className="text-4xl  text-[#c4c4c4] mb-10 font-manrope">
+        <div className="w-full md:w-2/3 md:pr-10 ">
+          <h1 className="flex justify-between  text-4xl  text-[#c4c4c4] mb-10 font-manrope">
             {" "}
             Hi There 👋
+            <BackToHomeIcon />
           </h1>
           <h2 className="text-4xl mb-14 font-semibold sm:text-5xl lg:mb-10 lg:mt-10 font-manrope animate-fade-down animate-duration-500">
             <span className="text-[#c4c4c4] opacity-55">I{"'"}m </span>

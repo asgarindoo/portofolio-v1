@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Sidebar from "../components/sidebar";
 import BlogPost from "../components/BlogPost";
+import BackToHomeIcon from "../components/BackToHome";
 
 const BlogPage = () => {
   return (
@@ -15,9 +16,10 @@ const BlogPage = () => {
       </Head>
 
       <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 flex flex-wrap">
-        <div className="w-full md:w-2/3 pr-10">
-          <h1 className="text-4xl text-[#c4c4c4] mb-10 font-manrope">
-            Blog 📝
+        <div className="w-full md:w-2/3 md:pr-10">
+          <h1 className="flex justify-between text-4xl text-[#c4c4c4] mb-10 font-manrope">
+            <p>Blog 📝</p>
+            <BackToHomeIcon />
           </h1>
 
           {/* Render BlogPosts */}

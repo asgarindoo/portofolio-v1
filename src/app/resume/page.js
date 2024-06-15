@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Sidebar from "../components/sidebar";
 import EmbeddedResume from "../components/resume";
-import { IoIosArrowRoundBack } from "react-icons/io";
+import BackToHomeIcon from "../components/BackToHome";
 
 const Resume = () => {
   return (
@@ -19,7 +19,7 @@ const Resume = () => {
         <div className="w-full md:w-2/3 md:pr-10 ">
           <h1 className="flex justify-between text-4xl text-[#c4c4c4] mb-10 font-manrope">
             <p>Resume 📄</p>
-            <IoIosArrowRoundBack className=" w-12 h-12 border-2 border-[#c4c4c4] rounded-full p-2 cursor-pointer  transform transition-transform duration-300 hover:rotate-90" />
+            <BackToHomeIcon />
           </h1>
           <EmbeddedResume />
         </div>
