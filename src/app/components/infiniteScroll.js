@@ -10,7 +10,7 @@ const InfiniteScroll = () => {
         <div className="animate-loop-scroll group-hover:paused flex space-x-16">
           <Image
             loading="lazy"
-            src="/JavaScript-logo.png"
+            src="/Javascript.png"
             width={50}
             height={50}
             className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
@@ -70,7 +70,7 @@ const InfiniteScroll = () => {
           aria-hidden="true">
           <Image
             loading="lazy"
-            src="/javaScript-logo.png"
+            src="/Javascript.png"
             width={50}
             height={50}
             className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
