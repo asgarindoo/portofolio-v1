@@ -1,10 +1,10 @@
 import FeaturedArtworks from "./components/FeaturedArtworks";
-import MouseTrail from "./components/MouseTrail";
+import CursorTrail from "./components/CursorTrail";
 
 const HomePage = () => {
   return (
     <div className="lg:overflow-hidden lg:w-screen lg:h-screen">
-      <MouseTrail />
+      <CursorTrail />
       <FeaturedArtworks />;
     </div>
   );

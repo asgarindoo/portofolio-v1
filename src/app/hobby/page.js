@@ -1,9 +1,11 @@
 import Head from "next/head";
 import Sidebar from "../components/sidebar";
+import CursorTrail from "../components/CursorTrail";
 
 const hobbyPage = () => {
   return (
     <div className="bg-[#0d0d0d] min-h-screen">
+      <CursorTrail />
       <Head>
         <title>Project</title>
         <meta name="description" content="Description of my project." />

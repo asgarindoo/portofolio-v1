@@ -2,10 +2,12 @@ import Head from "next/head";
 import Sidebar from "../components/sidebar";
 import Project from "../components/project";
 import BackToHomeIcon from "../components/BackToHome";
+import CursorTrail from "../components/CursorTrail";
 
 const ProjectPage = () => {
   return (
     <div className="bg-[#0d0d0d] min-h-screen">
+      <CursorTrail />
       <Head>
         <title>Project</title>
         <meta name="description" content="Description of my project." />

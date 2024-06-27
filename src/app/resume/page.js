@@ -2,10 +2,12 @@ import Head from "next/head";
 import Sidebar from "../components/sidebar";
 import EmbeddedResume from "../components/resume";
 import BackToHomeIcon from "../components/BackToHome";
+import CursorTrail from "../components/CursorTrail";
 
 const Resume = () => {
   return (
     <div className="bg-[#0d0d0d] min-h-screen">
+      <CursorTrail />
       <Head>
         <title>CV</title>
         <meta name="Curiculum Vitae" content="Curiculum Vitae" />
