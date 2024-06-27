@@ -4,16 +4,16 @@ const InfiniteScroll = () => {
   return (
     <div>
       <div className="overflow-hidden mx-5 px-5 ">
-        <h1 className="text-lg mb-10 sm:mt-5">Stack I Use</h1>
+        <h1 className="text-lg mb-10 mt-5">Stack I Use</h1>
       </div>
-      <div className="group flex space-x-16 overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] ">
+      <div className="group flex space-x-16 mx-12 overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] ">
         <div className="animate-loop-scroll group-hover:paused flex space-x-16">
           <Image
             loading="lazy"
             src="/Javascript.png"
             width={50}
             height={50}
-            className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
+            className="max-w-none h-10 w-10 "
             alt="Image 1"
           />
           <Image
@@ -21,7 +21,7 @@ const InfiniteScroll = () => {
             src="/Vuejs.png"
             width={50}
             height={50}
-            className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
+            className="max-w-none h-10 w-10 "
             alt="Image 2"
           />
           <Image
@@ -29,7 +29,7 @@ const InfiniteScroll = () => {
             src="/TailwindCSS.png"
             width={50}
             height={50}
-            className="max-w-none h-10 w-14 grayscale hover:grayscale-0"
+            className="max-w-none h-10 w-14 "
             alt="Image 3"
           />
           <Image
@@ -37,7 +37,7 @@ const InfiniteScroll = () => {
             src="/Express.png"
             width={50}
             height={50}
-            className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
+            className="max-w-none h-10 w-10 "
             alt="Image 4"
           />
           <Image
@@ -45,7 +45,7 @@ const InfiniteScroll = () => {
             src="/Mongodb.png"
             width={50}
             height={50}
-            className="max-w-none h-10 w-10 grayscale hover:grayscale-0 "
+            className="max-w-none h-10 w-10 "
             alt="Image 5"
           />
           <Image
@@ -53,7 +53,7 @@ const InfiniteScroll = () => {
             src="/git.png"
             width={50}
             height={50}
-            className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
+            className="max-w-none h-10 w-10 "
             alt="Image 6"
           />
           <Image
@@ -61,7 +61,7 @@ const InfiniteScroll = () => {
             src="/Figma.png"
             width={50}
             height={50}
-            className="max-w-none h-12 w-12 grayscale hover:grayscale-0"
+            className="max-w-none h-12 w-12 "
             alt="Image 7"
           />
         </div>
@@ -73,7 +73,7 @@ const InfiniteScroll = () => {
             src="/Javascript.png"
             width={50}
             height={50}
-            className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
+            className="max-w-none h-10 w-10 "
             alt="Image 1"
           />
           <Image
@@ -81,7 +81,7 @@ const InfiniteScroll = () => {
             src="/Vuejs.png"
             width={50}
             height={50}
-            className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
+            className="max-w-none h-10 w-10 "
             alt="Image 2"
           />
           <Image
@@ -89,7 +89,7 @@ const InfiniteScroll = () => {
             src="/TailwindCSS.png"
             width={50}
             height={50}
-            className="max-w-none h-10 w-14 grayscale hover:grayscale-0"
+            className="max-w-none h-10 w-14 "
             alt="Image 3"
           />
           <Image
@@ -97,7 +97,7 @@ const InfiniteScroll = () => {
             src="/Express.png"
             width={50}
             height={50}
-            className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
+            className="max-w-none h-10 w-10 "
             alt="Image 4"
           />
           <Image
@@ -105,7 +105,7 @@ const InfiniteScroll = () => {
             src="/Mongodb.png"
             width={50}
             height={50}
-            className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
+            className="max-w-none h-10 w-10 "
             alt="Image 5"
           />
           <Image
@@ -113,7 +113,7 @@ const InfiniteScroll = () => {
             src="/git.png"
             width={50}
             height={50}
-            className="max-w-none h-10 w-10 grayscale hover:grayscale-0"
+            className="max-w-none h-10 w-10 "
             alt="Image 6"
           />
           <Image
@@ -121,7 +121,7 @@ const InfiniteScroll = () => {
             src="/Figma.png"
             width={50}
             height={50}
-            className="max-w-none h-12 w-12 grayscale hover:grayscale-0"
+            className="max-w-none h-12 w-12 "
             alt="Image 7"
           />
         </div>
